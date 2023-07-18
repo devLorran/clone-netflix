@@ -62,8 +62,7 @@ export default () => {
 
       <footer>
         Feito por LorranCode
-        Direitos de imagem para Netflix<br/>
-        Dados pegos no https://Themoviedb.org
+        Dados dos filmes vindo do https://Themoviedb.org
       </footer>
 
       {/* LOADING */}
