@@ -1,18 +1,6 @@
 const API_KEY = 'c006c082172cbf0d74c503929b97e161';
 const API_BASE = 'https://api.themoviedb.org/3';
 
-/**
- * originais da netflix
- * recomendados (trending)
- * em alta (top rated)
- * ação
- * comédia
- * terror
- * romance
- * documentários
- * código tv?with_network=213 -> NETFLIX
- */
-
 const basicFetch = async (endpoint) => {
     const req = await fetch(`${API_BASE}${endpoint}`);
     const json = await req.json();
@@ -24,7 +12,7 @@ export default {
         return [
             {
                 slug: 'originals',
-                title: 'Originais do Netflix',
+                title: 'Originais',
                 items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
             },
             {

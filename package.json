@@ -1,6 +1,6 @@
 {
   "homepage": "https://devLorran.github.io/clone-app",
-  "name": "netflixclone",
+  "name": "cloneapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
